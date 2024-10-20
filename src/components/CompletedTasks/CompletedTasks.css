@@ -1,0 +1,22 @@
+/* Completed Tasks Styles */
+.completed-task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f8f9fa; /* Light gray background for completed tasks */
+    border: 1px solid #6c757d; /* Gray border for completed tasks */
+    border-radius: 5px;
+  }
+  
+  .completed-task span {
+    text-decoration: line-through; /* Strike through for completed tasks */
+    color: #6c757d; /* Gray color for completed tasks */
+  }
+  
+  .completed-task .timestamp {
+    font-size: 0.8rem; /* Smaller font for timestamps */
+    color: #6c757d; /* Gray color */
+  }
+  

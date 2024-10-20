@@ -1,0 +1,38 @@
+/* Pending Tasks Styles */
+.pending-task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #ffffff; /* White background for pending tasks */
+    border: 1px solid #007bff; /* Blue border for pending tasks */
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth hover effect */
+  }
+  
+  .pending-task:hover {
+    background-color: #e1f5ff; /* Light blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  .pending-task button {
+    margin-left: 5px;
+    background-color: #28a745; /* Green for complete button */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pending-task button:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  .pending-task .timestamp {
+    font-size: 0.8rem; /* Smaller font for timestamps */
+    color: #6c757d; /* Gray color */
+  }
+  

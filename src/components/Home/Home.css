@@ -1,112 +1,129 @@
-/* Base styles for the home container */
+/* Home.css */
 .home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-family: 'Poppins', sans-serif; /* Use a modern font like Poppins */
   padding: 40px 20px;
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f5f7;
-  color: #333;
+  background-color: #FFFBDB; /* Light background color */
 }
 
-/* Header section styles */
 .home-header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .home-header h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #0052cc; /* Atlassian blue */
+  font-size: 3em;
+  color: #DA7422; /* Accent color for the header */
+  font-weight: 700; /* Bold header */
 }
 
 .home-header p {
-  font-size: 1.2rem;
-  color: #5e6c84; /* Secondary text color */
-  max-width: 600px;
+  font-size: 1.2em;
+  color: #30362F; /* Darker shade for better readability */
+  max-width: 800px;
   margin: 0 auto;
+  line-height: 1.5; /* Improved line spacing */
 }
 
-/* Features section */
 .home-features {
-  text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .home-features h2 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2.5em;
+  color: #DA7422; /* Accent color for feature headers */
+  margin-bottom: 30px;
+  font-weight: 600; /* Semi-bold */
 }
 
 .features-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 30px;
+  padding: 0 10px;
 }
 
 .feature-item {
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  max-width: 300px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #A59132; /* Soft background color for feature items */
+  border-radius: 10px; /* Rounded corners */
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
 }
 
 .feature-item img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  border-radius: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .feature-item h3 {
-  font-size: 1.5rem;
-  color: #172b4d; /* Dark text */
+  font-size: 1.8em;
+  color: #30362F; /* Dark gray for feature titles */
+  margin-bottom: 10px;
+  font-weight: 500; /* Medium weight */
 }
 
 .feature-item p {
-  font-size: 1rem;
-  color: #5e6c84;
+  color: #625834; /* Soft dark color for feature descriptions */
+  line-height: 1.6; /* Improved line spacing */
 }
 
-/* Hover effect for features */
-.feature-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-}
-
-/* Action buttons */
 .home-actions {
-  margin: 40px 0;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .home-button {
-  background-color: #0052cc;
-  color: white;
-  padding: 12px 24px;
-  font-size: 1.1rem;
+  background-color: #DA7422; /* Button color */
+  color: #FFFBDB; /* Light text */
   border: none;
   border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 1.3em;
   cursor: pointer;
-  margin: 0 10px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .home-button:hover {
-  background-color: #0747a6;
+  background-color: #625834; /* Darker shade on hover */
+  color: #FFFBDB; /* Light text on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
 }
 
-/* Footer styles */
 .home-footer {
   text-align: center;
   margin-top: 60px;
+  color: #30362F; /* Dark gray for footer text */
+  font-size: 0.9em; /* Smaller footer text */
 }
 
-.home-footer p {
-  font-size: 1rem;
-  color: #5e6c84;
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .home-header h1 {
+    font-size: 2.5em;
+  }
+
+  .home-header p {
+    font-size: 1em;
+  }
+
+  .home-features h2 {
+    font-size: 2.2em;
+  }
+
+  .feature-item h3 {
+    font-size: 1.5em;
+  }
+
+  .home-button {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
 }

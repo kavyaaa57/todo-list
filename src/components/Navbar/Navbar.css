@@ -1,0 +1,67 @@
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    left: -250px; 
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: #625834; /* Olive Brown background */
+    color: #FFFBDB; /* Light Yellow text */
+    transition: left 0.3s ease;
+    padding: 20px;
+    z-index: 1000;
+}
+
+/* Open state */
+.navbar.open {
+    left: 0; 
+    
+}
+
+/* Close button */
+.navbar .close-btn {
+    background: none;
+    border: none;
+    color: #DA7422; /* Burnt Orange text for close button */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Navigation List */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Reset margin for ul */
+}
+
+.navbar li {
+    margin: 15px 0; /* Spacing between list items */
+}
+
+/* Navigation Links */
+.navbar a {
+    color: #ececea; /* Gold text for links */
+    text-decoration: none;
+    font-weight: 500; /* Bold text for links */
+    transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Hover Effect */
+.navbar a:hover {
+    color: #DA7422; /* Burnt Orange for hover effect */
+}
+
+/* Active Link Style */
+.navbar a.active {
+    color: #30362F; /* Dark Green for active link */
+    font-weight: bold; /* Bold style for active link */
+}
+
+/* Optional: Add padding for navbar items */
+.navbar li {
+    padding: 10px 0; /* Vertical padding for better spacing */
+}
+
+.h2{
+    color:#DA7422 !important;
+}

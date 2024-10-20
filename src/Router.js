@@ -1,8 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './components/Home/Home'; // Replace with your actual component imports
+import Home from './components/Home/Home'; 
 import TodoList from './components/TodoList/TodoList';
-// Import other components as needed
+import CompletedTasks from './components/CompletedTasks/CompletedTasks';
+import PendingTasks from './components/PendingTasks/PendingTasks';
 
 const AppRouter = () => {
   return (
@@ -10,7 +11,8 @@ const AppRouter = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/TodoList" element={<TodoList />} />
-        {/* Add other routes here */}
+        <Route path="/completed-tasks" component={CompletedTasks} />
+        <Route path="/pending-tasks" component={PendingTasks} />
       </Routes>
     </Router>
   );

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css'; // Ensure this file exists in the same directory
 
 // Import images (make sure to replace these paths with your actual image paths)
@@ -64,12 +65,12 @@ const Home = () => {
       </section>
 
       <div className="home-actions">
-        <button className="home-button" onClick={() => alert('Redirecting to Sign Up...')}>
-          Sign Up
+      <Link to="/todolist">
+        <button className="home-button" onClick={() => alert('Redirecting to Create a Task..')}>
+          Get Started
         </button>
-        <button className="home-button" onClick={() => alert('Redirecting to Log In...')}>
-          Log In
-        </button>
+      </Link>
+        
       </div>
 
       <footer className="home-footer">
