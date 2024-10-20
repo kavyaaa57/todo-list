@@ -1,0 +1,112 @@
+/* Base styles for the home container */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f5f7;
+  color: #333;
+}
+
+/* Header section styles */
+.home-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.home-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0052cc; /* Atlassian blue */
+}
+
+.home-header p {
+  font-size: 1.2rem;
+  color: #5e6c84; /* Secondary text color */
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Features section */
+.home-features {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.home-features h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.feature-item {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.feature-item h3 {
+  font-size: 1.5rem;
+  color: #172b4d; /* Dark text */
+}
+
+.feature-item p {
+  font-size: 1rem;
+  color: #5e6c84;
+}
+
+/* Hover effect for features */
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Action buttons */
+.home-actions {
+  margin: 40px 0;
+}
+
+.home-button {
+  background-color: #0052cc;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #0747a6;
+}
+
+/* Footer styles */
+.home-footer {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.home-footer p {
+  font-size: 1rem;
+  color: #5e6c84;
+}
